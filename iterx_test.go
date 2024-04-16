@@ -16,9 +16,9 @@ import (
 	"github.com/gocql/gocql"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/scylladb/gocqlx/v2"
-	. "github.com/scylladb/gocqlx/v2/gocqlxtest"
-	"github.com/scylladb/gocqlx/v2/qb"
+	"github.com/oanogin/gocqlx/v2"
+	. "github.com/oanogin/gocqlx/v2/gocqlxtest"
+	"github.com/oanogin/gocqlx/v2/qb"
 	"gopkg.in/inf.v0"
 )
 

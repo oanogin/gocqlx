@@ -2,6 +2,7 @@
 // Use of this source code is governed by a ALv2-style
 // license that can be found in the LICENSE file.
 
+//go:build all || integration
 // +build all integration
 
 package example
@@ -10,10 +11,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/scylladb/gocqlx/v2"
-	"github.com/scylladb/gocqlx/v2/gocqlxtest"
-	"github.com/scylladb/gocqlx/v2/migrate"
-	"github.com/scylladb/gocqlx/v2/migrate/example/cql"
+	"github.com/oanogin/gocqlx/v2"
+	"github.com/oanogin/gocqlx/v2/gocqlxtest"
+	"github.com/oanogin/gocqlx/v2/migrate"
+	"github.com/oanogin/gocqlx/v2/migrate/example/cql"
 )
 
 // Running examples locally:

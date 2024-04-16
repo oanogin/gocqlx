@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/scylladb/gocqlx/v2"
+	"github.com/oanogin/gocqlx/v2"
 )
 
 // BATCH reference:
@@ -28,11 +28,11 @@ type BatchBuilder struct {
 // Batch returns a new BatchBuilder.
 // BatchBuilder encapsulates batch cqls as one ordinary gocql.Query for convenience.
 // Below are the limitations of encapsulating batch cqls based on gocql.Query instead of gocql.Batch:
-//    * gocql.Batch has some more batch specific check, such as BatchSize(65535).
-//    * gocql.Batch use BatchObserver instead of QueryObserver.
-//    * gocql.Batch has cancelBatch call back.
-//    * gocql.Batch prepares the included statements separately, which is more efficient.
-//      In contrast, gocqlx.qb.BatchBuilder, which is based on gocql.Query, prepares the whole batch statements as one ordinary query.
+//   - gocql.Batch has some more batch specific check, such as BatchSize(65535).
+//   - gocql.Batch use BatchObserver instead of QueryObserver.
+//   - gocql.Batch has cancelBatch call back.
+//   - gocql.Batch prepares the included statements separately, which is more efficient.
+//     In contrast, gocqlx.qb.BatchBuilder, which is based on gocql.Query, prepares the whole batch statements as one ordinary query.
 //
 // Deprecated: Please use gocql.Session.NewBatch() instead.
 func Batch() *BatchBuilder {

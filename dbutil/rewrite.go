@@ -5,8 +5,8 @@
 package dbutil
 
 import (
-	"github.com/scylladb/gocqlx/v2"
-	"github.com/scylladb/gocqlx/v2/table"
+	"github.com/oanogin/gocqlx/v2"
+	"github.com/oanogin/gocqlx/v2/table"
 )
 
 // RewriteTable rewrites src table to dst table.

@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/scylladb/gocqlx/v2/qb"
+	"github.com/oanogin/gocqlx/v2/qb"
 )
 
 func TestTableGet(t *testing.T) {

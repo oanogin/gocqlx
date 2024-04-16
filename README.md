@@ -1,4 +1,4 @@
-# 🚀 GocqlX [![GoDoc](https://pkg.go.dev/badge/github.com/scylladb/gocqlx/v2.svg)](https://pkg.go.dev/github.com/scylladb/gocqlx/v2) [![Go Report Card](https://goreportcard.com/badge/github.com/scylladb/gocqlx)](https://goreportcard.com/report/github.com/scylladb/gocqlx) [![Build Status](https://travis-ci.org/scylladb/gocqlx.svg?branch=master)](https://travis-ci.org/scylladb/gocqlx)
+# 🚀 GocqlX [![GoDoc](https://pkg.go.dev/badge/github.com/oanogin/gocqlx/v2.svg)](https://pkg.go.dev/github.com/oanogin/gocqlx/v2) [![Go Report Card](https://goreportcard.com/badge/github.com/oanogin/gocqlx)](https://goreportcard.com/report/github.com/oanogin/gocqlx) [![Build Status](https://travis-ci.org/scylladb/gocqlx.svg?branch=master)](https://travis-ci.org/scylladb/gocqlx)
 
 GocqlX makes working with Scylla easy and less error-prone.
 It’s inspired by [Sqlx](https://github.com/jmoiron/sqlx), a tool for working with SQL databases, but it goes beyond what Sqlx provides.
@@ -13,14 +13,14 @@ It’s inspired by [Sqlx](https://github.com/jmoiron/sqlx), a tool for working w
 
 Subpackages provide additional functionality:
 
-* CQL query builder ([package qb](https://github.com/scylladb/gocqlx/blob/master/qb))
-* CRUD operations based on table model ([package table](https://github.com/scylladb/gocqlx/blob/master/table))
-* Database migrations ([package migrate](https://github.com/scylladb/gocqlx/blob/master/migrate))
+* CQL query builder ([package qb](https://github.com/oanogin/gocqlx/blob/master/qb))
+* CRUD operations based on table model ([package table](https://github.com/oanogin/gocqlx/blob/master/table))
+* Database migrations ([package migrate](https://github.com/oanogin/gocqlx/blob/master/migrate))
 
 ## Installation
 
 ```bash
-    go get -u github.com/scylladb/gocqlx/v2
+    go get -u github.com/oanogin/gocqlx/v2
 ```
 
 ## Getting started
@@ -112,7 +112,7 @@ t.Log(people)
 Installation
 
 ```bash
-go get -u "github.com/scylladb/gocqlx/v2/cmd/schemagen"
+go get -u "github.com/oanogin/gocqlx/v2/cmd/schemagen"
 ```
 
 Usage:
@@ -143,7 +143,7 @@ Generates `models/models.go` as follows:
 
 package models
 
-import "github.com/scylladb/gocqlx/v2/table"
+import "github.com/oanogin/gocqlx/v2/table"
 
 // Table models.
 var (
@@ -186,7 +186,7 @@ var (
 
 ## Examples
 
-You can find lots of examples in [example_test.go](https://github.com/scylladb/gocqlx/blob/master/example_test.go).
+You can find lots of examples in [example_test.go](https://github.com/oanogin/gocqlx/blob/master/example_test.go).
 
 Go and run them locally:
 
@@ -209,13 +209,13 @@ BenchmarkBaseGocqlSelect             747           1664365 ns/op           49415
 BenchmarkGocqlxSelect                667           1877859 ns/op           42521 B/op        932 allocs/op
 ```
 
-See the benchmark in [benchmark_test.go](https://github.com/scylladb/gocqlx/blob/master/benchmark_test.go).
+See the benchmark in [benchmark_test.go](https://github.com/oanogin/gocqlx/blob/master/benchmark_test.go).
 
 ## License
 
 Copyright (C) 2017 ScyllaDB
 
-This project is distributed under the Apache 2.0 license. See the [LICENSE](https://github.com/scylladb/gocqlx/blob/master/LICENSE) file for details.
+This project is distributed under the Apache 2.0 license. See the [LICENSE](https://github.com/oanogin/gocqlx/blob/master/LICENSE) file for details.
 It contains software from:
 
 * [gocql project](https://github.com/gocql/gocql), licensed under the BSD license

@@ -10,7 +10,7 @@ import (
 
 	"github.com/gocql/gocql"
 	"github.com/google/go-cmp/cmp"
-	"github.com/scylladb/gocqlx/v2/gocqlxtest"
+	"github.com/oanogin/gocqlx/v2/gocqlxtest"
 )
 
 var flagUpdate = flag.Bool("update", false, "update golden file")
